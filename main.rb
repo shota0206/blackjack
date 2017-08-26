@@ -9,8 +9,17 @@ end
 
 puts "kaisisimasu"
 total = rand(1..13)
-puts total
+total2 = rand(1..13)
+puts "you are #{total}"
+puts "Im #{total2}"
 
+while total2 <= 21 do
+    if total2 <= 18 then
+         total2 += rand(1..13)
+    else
+         break
+    end
+end
 while total <= 21 do
 p "hit?(y/n)"
 hit = gets.chomp
@@ -22,9 +31,11 @@ elsif hit == "n"
 end
 end
 if total > 21 then
-puts "anatanomakedesu"
+puts "bast!"
+puts "Im #{total2}"
 else
-puts total
+puts "you are #{total}"
+puts "Im #{total2}"
 end
 
 
