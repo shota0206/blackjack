@@ -24,7 +24,9 @@ end
 if total > 21 then
 puts "anatanomakedesu"
 else
-puts total
+puts "you are #{total}"
+total2 = 21
+puts "I am #{total2}"
 end
 
 
